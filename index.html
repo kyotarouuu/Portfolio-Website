@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpeg" class="logo">
+                <ul id="sideM">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeM()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openM()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Hi, I'm </p>
+                <h1>John <span>Paul</span></h1>
+                <p>and I'm a Web Developer!</p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="abt-photo.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-tle">About me</h1>
+                    <p class="desc">As a passionate student aspiring to become a web developer, I thrive on the excitement of bringing creative ideas to life through code. My journey into web development began with a curiosity about how websites work, leading me to immerse myself in HTML, CSS, and JavaScript. I am dedicated to honing my skills and contributing innovative solutions to real-world challenges. My ultimate goal is to create visually appealing and highly functional websites that provide exceptional user experiences.</p>
+                    <div class="tab-tles">
+                        <p class="tab-links act-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-cont act-tab" id="skills">
+                        <ul>
+                            <li>UI/UX Designing Web</li>
+                            <li>Web Development</li>
+                            <li>Computer Literature</li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont" id="experience">
+                        <ul>
+                            <li>UI/UX Seminar</li>
+                            <li>Computer Literature</li>
+                            <li>Special Program for Employment of Students</li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont" id="education">
+                        <ul>
+                            <li><span>Current Year</span><br>Dalubhasaan ng Lungsod ng Lucena</li>
+                            <li><span>2020 - 2022</span><br>Gulang Gulang Zaballero National National High School</li>
+                            <li><span>2016 - 2020</span><br>Gulang Gulang Zaballero National High School</li>
+                            <li><span>2010 - 2016</span><br>Gulang Gulang Elementary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------portfolio section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="programming.jpeg">
+                    <div class="layer">
+                        <h3>Calculator App</h3>
+                        <p>Project I</p>
+                        <a href="https://kyotarouuu.github.io/calculator-app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photography.jpeg">
+                    <div class="layer">
+                        <h3>Web Designing</h3>
+                        <p>Project II</p>
+                        <a href="https://www.figma.com/proto/yJUX4OmjF5PSF5SBCmEAIL/Untitled?t=IpkgWfZNkJPaD1Vz-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=4-659&starting-point-node-id=4%3A228"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="drawing.jpeg">
+                    <div class="layer">
+                        <h3>Online Resume</h3>
+                        <p>Project III</p>
+                        <a href="https://kyotarouuu.github.io/online-resume/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/watch?v=AQNTfdV_1HM" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------------contact section -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>paulmagculang@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0912-396-2310</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/paul.magculang/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/jampyeongg/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://github.com/kyotarouuu"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2" id="dl-cv">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" id="sub-hov">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2024 John Paul R. Magculang | All Rights Reserved</p>
+        </div>
+     </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-cont');
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("act-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("act-tab");
+            }
+            event.currentTarget.classList.add("act-link");
+            document.getElementById(tabname).classList.add("act-tab");
+        }
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("sideM");
+        function openM(){
+            sideMenu.style.right = "0";
+        }
+        function closeM(){
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
